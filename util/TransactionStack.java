@@ -1,0 +1,46 @@
+// dynamic stack from scrach
+// use an inner class for the nodes or the ierator to hit the nested classes and access control
+
+package microfineract.util;
+
+public class TransactionStack {
+    private String[] transactions;
+    private int top;
+    private static final int INITIAL_CAPACITY = 5;
+
+    public TransactionStack() {
+        transactions = new String[INITIAL_CAPACITY];
+        top = -1;
+    }
+
+    public void push(String transaction) {
+        if (top == transactions.length - 1) {
+            expandCapacity();
+        }
+        transactions[++top] = transaction;
+    }
+
+    private void expandCapacity() {
+        String[] newArray = new String[transactions.length * 2];
+        System.arraycopy(transactions, 0, newArray, 0, transactions.length);
+        transactions = newArray; // Old array memory is now freed by GC
+        Logger.log("INFO", "Transaction stack dynamically resized to " + transactions.length);
+    }
+
+    public StackIterator getIterator() {
+        return new StackIterator();
+    }
+
+    public class StackIterator {
+        private int currentIndex = top;
+
+        public boolean hasNext() {
+            return currentIndex >= 0;
+        }
+
+        public String getNext() {
+            if (!hasNext()) return null;
+            return transactions[currentIndex--];
+        }
+    }
+}
