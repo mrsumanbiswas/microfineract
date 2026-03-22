@@ -12,7 +12,7 @@ endl
 {next date:time..} again..  <- append in app.log on each and every mechine run..
 */
 
-package microfineract.util;
+package util;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -23,7 +23,7 @@ import java.time.LocalDateTime;
  * Utility class for handling system-wide logging to a physical file.
  */
 public class Logger {
-    private static final String LOG_FILE = "../app.log";
+    private static final String LOG_FILE = "app.log";
 
     public static void log(String level, String message) {
         PrintWriter writer = null;
@@ -31,18 +31,19 @@ public class Logger {
             try {
                 // Open file in append mode (true)
                 writer = new PrintWriter(new FileWriter(LOG_FILE, true));
-                
+
                 String timeStamp = LocalDateTime.now().toString();
-                
+
                 writer.println("[" + timeStamp + "] [" + level + "] " + message);
-                
-            } catch (SecurityException | IllegalArgumentException runtimeErr) { 
+                writer.flush();
+
+            } catch (SecurityException | IllegalArgumentException runtimeErr) {
                 System.err.println("Runtime Logging Error: " + runtimeErr.getMessage());
             }
-            
+
         } catch (IOException ioErr) {
             System.err.println("CRITICAL: Failed to access log file: " + ioErr.getMessage());
-            
+
         } finally {
             if (writer != null) {
                 writer.close();

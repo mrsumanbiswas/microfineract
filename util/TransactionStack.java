@@ -1,7 +1,7 @@
 // dynamic stack from scrach
 // use an inner class for the nodes or the ierator to hit the nested classes and access control
 
-package microfineract.util;
+package util;
 
 public class TransactionStack {
     private String[] transactions;

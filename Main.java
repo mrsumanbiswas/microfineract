@@ -3,8 +3,6 @@
 // Auto-Grader Setup (as sir mentioned to do predefined data based)
 // Garbage collection
 
-package microfineract;
-
 import model.Client;
 import core.Account;
 import core.SavingsAccount;

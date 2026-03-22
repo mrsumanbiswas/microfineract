@@ -1,11 +1,11 @@
 // this is abstruct base class
 // protected variables, constructor chaining (this()), method overloading
 
-package microfineract.core;
+package core;
 
-import microfineract.util.TransactionStack;
-import microfineract.util.Logger;
-import microfineract.exception.BankExceptions.TransactionException;
+import util.TransactionStack;
+import util.Logger;
+import exception.BankExceptions.TransactionException;
 
 public abstract class Account {
 

@@ -1,11 +1,11 @@
 // build the customer profile
 // use varargs here public void assignAccounts(Account... accounts)
 
-package microfineract.model;
+package model;
 
-import microfineract.core.Account;
-import microfineract.util.Logger;
-import microfineract.exception.BankExceptions.TransactionException;
+import core.Account;
+import util.Logger;
+import exception.BankExceptions.TransactionException;
 import java.time.LocalDate;
 
 public class Client {

@@ -1,9 +1,9 @@
 // extend Account and implement BankingRules.InterestBearing (meth @Override)
 
-package microfineract.core;
+package core;
 
-import microfineract.model.BankingRules.InterestBearing;
-import microfineract.util.Logger;
+import model.BankingRules.InterestBearing;
+import util.Logger;
 
 public class SavingsAccount extends Account implements InterestBearing {
     

@@ -2,7 +2,7 @@
 // eg InvalidTransactionException
 // InsufficientBalanceError
 
-package microfineract.exception;
+package exception;
 
 public class BankExceptions {
 

@@ -1,5 +1,5 @@
 // this will hold the nested interfaces (e.g., InterestBearing, Penalizable)
-package microfineract.model;
+package model;
 
 public interface BankingRules {
 

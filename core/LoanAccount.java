@@ -1,7 +1,7 @@
-package microfineract.core;
+package core;
 
-import microfineract.model.BankingRules.Penalizable;
-import microfineract.util.Logger;
+import model.BankingRules.Penalizable;
+import util.Logger;
 
 public class LoanAccount extends Account implements Penalizable {
 
