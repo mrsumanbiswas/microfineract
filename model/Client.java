@@ -1,5 +1,5 @@
-// build the customer profile
-// use varargs here public void assignAccounts(Account... accounts)
+// customer profile
+// public void assignAccounts(Account... accounts)
 
 package model;
 
@@ -21,7 +21,7 @@ public class Client {
         this.clientId = clientId;
         this.name = name;
         this.joinDate = LocalDate.now();
-        this.accounts = new Account[5]; // Fixed limit of 5 accounts per client
+        this.accounts = new Account[5]; // fixed limit of 5 accounts per client
         this.accountCount = 0;
         Logger.log("INFO", "New Client Profile Created: " + this.name + " [" + this.clientId + "]");
     }

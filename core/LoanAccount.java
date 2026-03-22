@@ -20,18 +20,18 @@ public class LoanAccount extends Account implements Penalizable {
         // 12 rows representing 12 months
         repaymentSchedule = new double[12][];
         
-        // Month 0 (Index 0): Grace period -> 0 payments due
+        // month 0 (Index 0): Grace period -> 0 payments deu
         repaymentSchedule[0] = new double[0];
         
-        // Months 1-5: Standard schedule -> 1 payment of $100 due per month
+        // mnths 1-5: standard schedule -> 1 payment of $100 due per month
         for (int i = 1; i <= 5; i++) {
             repaymentSchedule[i] = new double[] { 100.00 };
         }
         
-        // Month 6: Accelerated bi-weekly schedule -> 2 payments of $50 due
+        // mnth 6: accelerated bi-weekly schedule -> 2 payments of $50 due
         repaymentSchedule[6] = new double[] { 50.00, 50.00 };
         
-        // Months 7-11: Standard schedule -> 1 payment of $100 due per month
+        // months 7-11: standard schedule -> 1 payment of $100 due per month
         for (int i = 7; i < 12; i++) {
             repaymentSchedule[i] = new double[] { 100.00 };
         }
@@ -41,7 +41,7 @@ public class LoanAccount extends Account implements Penalizable {
 
     @Override
     public void applyPenalty() {
-        this.balance += LATE_FEE; // Increases the debt
+        this.balance += LATE_FEE; // increases the debt
         this.history.push("Penalty Applied: $" + LATE_FEE);
         Logger.log("WARN", "Late fee of $" + LATE_FEE + " applied to " + this.getAccountId());
     }
@@ -54,7 +54,7 @@ public class LoanAccount extends Account implements Penalizable {
         Logger.log("INFO", "[LOAN: " + this.getAccountId() + "] " + logMsg);
     }
 
-    // Specific monthly processing for a loan account.
+    // specific monthly processing for a loan account.
     @Override
     public void processMonthEnd() {
         Logger.log("INFO", "Month-end processed for Loan Account: " + this.getAccountId());

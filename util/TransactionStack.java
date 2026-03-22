@@ -1,5 +1,5 @@
-// dynamic stack from scrach
-// use an inner class for the nodes or the ierator to hit the nested classes and access control
+// dynamic stack
+// inner class for the nodes or the ierator && nested classes and access control
 
 package util;
 
@@ -23,7 +23,7 @@ public class TransactionStack {
     private void expandCapacity() {
         String[] newArray = new String[transactions.length * 2];
         System.arraycopy(transactions, 0, newArray, 0, transactions.length);
-        transactions = newArray; // Old array memory is now freed by GC
+        transactions = newArray; // odl array mem freed by gc
         Logger.log("INFO", "Transaction stack dynamically resized to " + transactions.length);
     }
 

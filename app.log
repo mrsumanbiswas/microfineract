@@ -1,0 +1,58 @@
+[2026-03-22T18:40:49.331667900] [INFO] System Booting Up...
+[2026-03-22T18:41:27.406759719] [INFO] New Client Profile Created: AMBRISH [001]
+[2026-03-22T18:41:27.409036621] [INFO] Account created: SAV-001 with balance 0.0
+[2026-03-22T18:41:27.409496433] [INFO] Account created: LOAN-001 with balance 10000.0
+[2026-03-22T18:41:27.409664159] [INFO] Jagged repayment schedule generated for loan: LOAN-001
+[2026-03-22T18:41:27.409815533] [INFO] Account SAV-001 linked to Client 001
+[2026-03-22T18:41:27.409875181] [INFO] Account LOAN-001 linked to Client 001
+[2026-03-22T18:41:36.222758676] [INFO] Report generated.
+[2026-03-22T18:43:05.781825843] [INFO] [ACC: SAV-001] FREE-MONEY of $4000.0. New Balance: $4000.0
+[2026-03-22T18:43:08.887090133] [INFO] Report generated.
+[2026-03-22T18:43:32.139914744] [ERROR] Deposit amount must be positive.
+[2026-03-22T18:44:01.236924014] [INFO] [LOAN: LOAN-001] IDK of $2000.0. Remaining Debt: $8000.0
+[2026-03-22T18:44:15.318307333] [INFO] [LOAN: LOAN-001] IKD of $-200.0. Remaining Debt: $8200.0
+[2026-03-22T18:44:21.837372698] [INFO] Report generated.
+[2026-03-22T18:44:50.808830106] [INFO] [ACC: SAV-001] Monthly Interest Yield of $13.333333333333334. New Balance: $4013.3333333333335
+[2026-03-22T18:44:50.809154291] [INFO] Month-end processed for Savings Account: SAV-001
+[2026-03-22T18:44:50.809268801] [INFO] Month-end processed for Loan Account: LOAN-001
+[2026-03-22T18:44:50.809395559] [WARN] Late fee of $35.0 applied to LOAN-001
+[2026-03-22T18:44:58.330077528] [INFO] Report generated.
+[2026-03-22T18:45:18.409674663] [INFO] New Client Profile Created: ToBeDeleted [TEMP-999]
+[2026-03-22T18:45:18.418273258] [INFO] System.gc() invoked.
+[2026-03-22T18:45:24.753984527] [INFO] System Shutting Down.
+[2026-03-22T18:45:55.213892419] [INFO] System Booting Up...
+[2026-03-22T18:45:56.994147811] [INFO] New Client Profile Created: Suman [001]
+[2026-03-22T18:45:56.996332586] [INFO] Account created: SAV-001 with balance 0.0
+[2026-03-22T18:45:56.996774227] [INFO] Account created: LOAN-001 with balance 10000.0
+[2026-03-22T18:45:56.996927411] [INFO] Jagged repayment schedule generated for loan: LOAN-001
+[2026-03-22T18:45:56.997074725] [INFO] Account SAV-001 linked to Client 001
+[2026-03-22T18:45:56.997159399] [INFO] Account LOAN-001 linked to Client 001
+[2026-03-22T18:45:56.997322168] [INFO] New Client Profile Created: CmdLineCoding [002]
+[2026-03-22T18:45:56.997402286] [INFO] Account created: SAV-002 with balance 0.0
+[2026-03-22T18:45:56.997482583] [INFO] Account created: LOAN-002 with balance 10000.0
+[2026-03-22T18:45:56.997573526] [INFO] Jagged repayment schedule generated for loan: LOAN-002
+[2026-03-22T18:45:56.997668205] [INFO] Account SAV-002 linked to Client 002
+[2026-03-22T18:45:56.997739914] [INFO] Account LOAN-002 linked to Client 002
+[2026-03-22T18:45:57.000458614] [INFO] [ACC: SAV-001] Standard Deposit of $2500.0. New Balance: $2500.0
+[2026-03-22T18:45:57.000666909] [INFO] [ACC: SAV-002] Hackathon_Sponsorship_Funds of $8220.0. New Balance: $8220.0
+[2026-03-22T18:45:57.001063238] [INFO] [LOAN: LOAN-001] First_Installment of $100.0. Remaining Debt: $9900.0
+[2026-03-22T18:45:57.001235276] [INFO] [ACC: SAV-001] Monthly Interest Yield of $8.333333333333334. New Balance: $2508.3333333333335
+[2026-03-22T18:45:57.001434296] [INFO] Month-end processed for Savings Account: SAV-001
+[2026-03-22T18:45:57.001566137] [INFO] Month-end processed for Loan Account: LOAN-001
+[2026-03-22T18:45:57.001691595] [WARN] Late fee of $35.0 applied to LOAN-001
+[2026-03-22T18:45:57.001810840] [INFO] [ACC: SAV-002] Monthly Interest Yield of $27.400000000000002. New Balance: $8247.4
+[2026-03-22T18:45:57.001903943] [INFO] Month-end processed for Savings Account: SAV-002
+[2026-03-22T18:45:57.002002690] [INFO] Month-end processed for Loan Account: LOAN-002
+[2026-03-22T18:45:57.002094894] [WARN] Late fee of $35.0 applied to LOAN-002
+[2026-03-22T18:45:57.002250549] [INFO] [ACC: SAV-001] Monthly Interest Yield of $8.361111111111112. New Balance: $2516.694444444445
+[2026-03-22T18:45:57.002329185] [INFO] Month-end processed for Savings Account: SAV-001
+[2026-03-22T18:45:57.002418144] [INFO] Month-end processed for Loan Account: LOAN-001
+[2026-03-22T18:45:57.002493517] [WARN] Late fee of $35.0 applied to LOAN-001
+[2026-03-22T18:45:57.002596731] [INFO] [ACC: SAV-002] Monthly Interest Yield of $27.491333333333333. New Balance: $8274.891333333333
+[2026-03-22T18:45:57.002678557] [INFO] Month-end processed for Savings Account: SAV-002
+[2026-03-22T18:45:57.002784698] [INFO] Month-end processed for Loan Account: LOAN-002
+[2026-03-22T18:45:57.002851052] [WARN] Late fee of $35.0 applied to LOAN-002
+[2026-03-22T18:45:57.004047612] [INFO] Report generated.
+[2026-03-22T18:45:57.004220468] [INFO] New Client Profile Created: ToBeDeleted [TEMP-999]
+[2026-03-22T18:45:57.009438871] [INFO] System.gc() invoked.
+[2026-03-22T18:45:57.009729455] [INFO] System Shutting Down.

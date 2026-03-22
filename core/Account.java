@@ -1,6 +1,5 @@
-// this is abstruct base class
-// protected variables, constructor chaining (this()), method overloading
-
+// abstruct base class
+// protected variables, constructor chaining, method overloading
 package core;
 
 import util.TransactionStack;

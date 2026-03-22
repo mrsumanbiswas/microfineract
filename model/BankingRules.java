@@ -1,4 +1,4 @@
-// this will hold the nested interfaces (e.g., InterestBearing, Penalizable)
+// nested interfaces
 package model;
 
 public interface BankingRules {

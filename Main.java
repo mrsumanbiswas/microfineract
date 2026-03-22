@@ -1,8 +1,3 @@
-// This is the entry point
-// String manipulation, string builder (to purse CLI commands)
-// Auto-Grader Setup (as sir mentioned to do predefined data based)
-// Garbage collection
-
 import model.Client;
 import core.Account;
 import core.SavingsAccount;
@@ -12,9 +7,7 @@ import exception.BankExceptions.TransactionException;
 
 import java.util.Scanner;
 
-/**
- * The entry point for the MicroFineract CLI application.
- */
+// The entry point for the MicroFineract CLI application.
 public class Main {
 
     private static Client[] bankDatabase = new Client[10];
@@ -71,10 +64,7 @@ public class Main {
         }
     }
 
-    /**
-     * REQUIREMENT: Automated testing with extensive hardcoded data.
-     * This sequence proves overloading, 1D/2D arrays, and polymorphism.
-     */
+    // overloading, 1D/2D arrays, and polymorphism.
     private static void runAutomatedTests() {
         System.out.println("\n--- RUNNING EXPANDED EVALUATION SEED ---");
         
@@ -91,7 +81,7 @@ public class Main {
             // Proving polymorphic loan repayment (Decreases debt)
             "DEPOSIT LOAN-001 100.00 First_Installment",
             
-            // Advancing time to prove interfaces and jagged arrays
+            // Advancing time (interfaces and jagged arrays)
             "MONTH_END", 
             "MONTH_END",
             
@@ -129,9 +119,8 @@ public class Main {
                 Account targetAccount = findAccount(tokens[1]);
                 double amount = Double.parseDouble(tokens[2]);
                 
-                // REQUIREMENT: Method Overloading demonstration
                 if (tokens.length >= 4) {
-                    // Reconstruct the note if it has multiple words
+                    // multiple words
                     String note = commandString.substring(commandString.indexOf(tokens[3]));
                     targetAccount.deposit(amount, note);
                 } else {
@@ -156,9 +145,7 @@ public class Main {
         }
     }
 
-    /**
-     * Helper method to search the 1D arrays for a specific account.
-     */
+    // Helper meth for 1d arr search
     private static Account findAccount(String accountId) {
         for (int i = 0; i < totalClients; i++) {
             Client c = bankDatabase[i];

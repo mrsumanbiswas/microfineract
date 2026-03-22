@@ -1,5 +1,5 @@
 // Custom exception hierarchy here
-// eg InvalidTransactionException
+// InvalidTransactionException
 // InsufficientBalanceError
 
 package exception;
